@@ -5,43 +5,39 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "95.85.230.35",
+      "tag": "🇦🇹 奥地利 (Austria) 01 - xiaohe",
+      "server": "152.53.1.40",
       "server_port": 443,
-      "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
+      "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "de.oblaco.bet",
+        "server_name": "at.quattro-tech.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
-          "short_id": ""
+          "public_key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
+          "short_id": "43dcff53849b81e6"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
-      "server": "202.181.177.8",
+      "tag": "🇦🇹 奥地利 (Austria) 02 - xiaohe",
+      "server": "132.243.203.207",
       "server_port": 8443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
         "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/channels/act",
+        "path": "/lives",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -52,16 +48,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - xiaohe",
-        "🇨🇿 捷克 (Czech) 02 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 01 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - xiaohe",
-        "🇨🇿 捷克 (Czech) 02 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 01 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
