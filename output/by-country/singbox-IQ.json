@@ -5,20 +5,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
-      "server": "45.142.166.211",
+      "tag": "🇮🇶 IQ 01 - xiaohe",
+      "server": "172.67.164.152",
       "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "uuid": "36a857e4-f3d4-43aa-8b90-d7da849da989",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false
+        "server_name": "002.Inc-ElectROcElL-001-002.WoRKERS.DEV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/knowledge?ed=2560fp=chrome",
+        "path": "/eyJqdW5rIjoib0RnakxTZUZvOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
         "headers": {
-          "Host": "cdn8848.776676.xyz"
+          "Host": "002.inc-electrocell-001-002.workers.dev"
         }
       }
     },
@@ -27,14 +30,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
