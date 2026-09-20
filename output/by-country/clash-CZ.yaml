@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
+  server: 104.21.16.123
+  port: 443
+  udp: true
+  type: trojan
+  password: Telegram_healer_config
+  sni: 7x7o3vtq5z6ymu3hv1fh-op9blt.hya6losm6lznoxhm6w3mk.workers.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /tr/qL8YIeH28wNcXfNTPgLCwOhNFEr?ed=2560
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
   server: 95.85.230.35
   port: 443
   udp: true
@@ -16,21 +27,6 @@ proxies:
     public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
   servername: de.oblaco.bet
   client-fingerprint: ''
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 202.181.177.8
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /channels/act
-    headers:
-      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
