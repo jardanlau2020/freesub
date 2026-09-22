@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: www.speedtest.net
+  server: 104.17.147.22
   port: 443
   udp: true
   type: trojan
@@ -16,35 +16,16 @@ proxies:
   ws-opts:
     path: /assignment
 - name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: www.speedtest.net
+  server: 104.17.147.22
   port: 443
   udp: true
   type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🌐 其他地区 (Other) 03 - xiaohe
-  server: www.speedtest.net
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.ignitelimit.com
+  password: Telegram_healer_config
+  sni: 30f67sbq8jjwmt7gytfc14.0m68-qz3hqyfnlar6n3iq.workers.dev
   skip-cert-verify: true
-- name: 🌐 其他地区 (Other) 04 - xiaohe
-  server: 104.18.8.83
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /assignment
+    path: /tr/D0RNup7f2Tt0Tna3gVu5OvfMJYJjD?ed=2560
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,8 +33,6 @@ proxy-groups:
   - AUTO
   - 🌐 其他地区 (Other) 01 - xiaohe
   - 🌐 其他地区 (Other) 02 - xiaohe
-  - 🌐 其他地区 (Other) 03 - xiaohe
-  - 🌐 其他地区 (Other) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,7 +40,5 @@ proxy-groups:
   proxies:
   - 🌐 其他地区 (Other) 01 - xiaohe
   - 🌐 其他地区 (Other) 02 - xiaohe
-  - 🌐 其他地区 (Other) 03 - xiaohe
-  - 🌐 其他地区 (Other) 04 - xiaohe
 rules:
 - MATCH,PROXIES
