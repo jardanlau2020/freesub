@@ -23,11 +23,11 @@ proxies:
   grpc-opts:
     grpc-service-name: vless
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  server: 93.190.9.131
+  server: 93.190.9.3
   port: 3090
   udp: true
   type: vless
-  uuid: dca830a2-3c69-4e1b-bc0b-a2ea22af53ba
+  uuid: ea53420b-e8ad-4e9d-ab21-ddd546231e92
   network: grpc
   grpc-opts:
     grpc-service-name: vless
@@ -43,6 +43,15 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  server: 93.190.9.26
+  port: 3090
+  udp: true
+  type: vless
+  uuid: ea53420b-e8ad-4e9d-ab21-ddd546231e92
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +61,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,5 +71,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
 rules:
 - MATCH,PROXIES
