@@ -5,23 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "surstreming.vvzzkontaktezzvv.garden",
+      "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
+      "server": "195.133.66.229",
       "server_port": 443,
-      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
-      "flow": "xtls-rprx-vision",
+      "uuid": "4abdfe42-aec7-4b66-974d-3f891e2e8184",
       "tls": {
         "enabled": true,
-        "server_name": "surstreming.vvzzkontaktezzvv.garden",
+        "server_name": "nlll.gaz-service.shop",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA",
-          "short_id": "fb442438e2223836"
+          "public_key": "Zl6Fe6WYQuaFe_QNUB4qU7nRkGujy7LqjoQ96GO3jUc",
+          "short_id": ""
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
@@ -29,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
