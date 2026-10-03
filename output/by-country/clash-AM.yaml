@@ -5,17 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
-  server: 37.139.42.225
-  port: 7448
+  server: us3.xiaoliyu.cyou
+  port: 18333
   udp: true
-  type: vless
-  uuid: 4643976f-85fa-40cf-9e58-ea28b50f253b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: V-wRiXvhBx01utmXJbrThJ_DE4tNJfK6mnzo9EB3fVA
-  servername: 37.139.42.225
-  client-fingerprint: firefox
+  type: hysteria2
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: us3.xiaoliyu.cyou
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
