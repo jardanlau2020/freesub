@@ -6,13 +6,13 @@
     {
       "type": "vless",
       "tag": "🇦🇱 AL 01 - xiaohe",
-      "server": "45.89.60.202",
+      "server": "78.159.131.79",
       "server_port": 443,
       "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "al-root.sworkingvpn.com",
+        "server_name": "nl-root.sworkingvpn.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -27,13 +27,13 @@
     {
       "type": "vless",
       "tag": "🇦🇱 AL 02 - xiaohe",
-      "server": "78.159.131.79",
+      "server": "45.89.60.202",
       "server_port": 443,
       "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nl-root.sworkingvpn.com",
+        "server_name": "al-root.sworkingvpn.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"

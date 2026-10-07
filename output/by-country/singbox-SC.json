@@ -8,7 +8,7 @@
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
       "server": "45.205.27.78",
       "server_port": 10443,
-      "password": "4f586424-a01a-4429-833f-b20cdbb4c310",
+      "password": "5f8aba38-369f-46a9-9e6c-a219a38a77b1",
       "tls": {
         "enabled": true,
         "server_name": "45.205.27.78",
@@ -48,7 +48,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -60,7 +60,7 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe",
-      "server": "144.31.50.236",
+      "server": "prep.wwwinternetvideo.click",
       "server_port": 443,
       "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
       "flow": "xtls-rprx-vision",
