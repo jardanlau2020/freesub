@@ -4,20 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-      "server": "89.39.161.157",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "aksai.org",
-        "insecure": false
-      },
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "freesocks.work",
+      "server_port": 2052,
+      "uuid": "e3fb01b6-69b4-41d7-babf-696d992de194",
       "transport": {
         "type": "ws",
-        "path": "/linkvws"
+        "path": "/@BlueKnight_net--@BlueKnight_net",
+        "headers": {
+          "Host": "uwu.blueknightnet.qzz.io"
+        }
       }
     },
     {
@@ -25,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

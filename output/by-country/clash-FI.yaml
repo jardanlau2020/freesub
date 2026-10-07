@@ -19,17 +19,13 @@ proxies:
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 151.241.137.132
+  server: 144.31.212.253
   port: 443
   udp: true
-  type: vless
-  uuid: 5786d86f-7731-4174-b1a3-84297e54b015
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: finland.ali-bard.online
-  client-fingerprint: safari
+  type: hysteria2
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: vps155-edge.kermemehori.ru
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 95.216.27.15
   port: 2053
@@ -43,14 +39,6 @@ proxies:
   servername: www.google.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 144.31.212.253
-  port: 443
-  udp: true
-  type: hysteria2
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  sni: vps155-edge.kermemehori.ru
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
   server: 65.108.3.59
   port: 443
   udp: true
@@ -63,6 +51,44 @@ proxies:
     short-id: 90ec9bba2019
   servername: web.eitaa.com
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  server: 151.241.137.132
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5786d86f-7731-4174-b1a3-84297e54b015
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: finland.ali-bard.online
+  client-fingerprint: random
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  server: 144.31.27.215
+  port: 43000
+  udp: true
+  type: vless
+  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
+    short-id: 568d87a47271344e
+  servername: 144.31.27.215
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  server: 132.243.231.12
+  port: 443
+  udp: true
+  type: vless
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM
+    short-id: 5efa80b939612291
+  servername: d3-se1.cloud-cdn.xyz
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,6 +100,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -85,5 +113,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
 rules:
 - MATCH,PROXIES
