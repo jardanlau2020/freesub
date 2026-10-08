@@ -7,9 +7,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
       "server": "185.135.86.175",
-      "server_port": 9017,
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "HAVAdE3nXhqA5nHp"
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "shadowsocks",
@@ -23,29 +23,13 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe",
       "server": "185.135.86.175",
-      "server_port": 9086,
-      "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe",
-      "server": "185.135.86.175",
       "server_port": 9033,
       "method": "aes-256-cfb",
       "password": "UTJA57ypk2XKQpnm"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe",
-      "server": "185.135.86.175",
-      "server_port": 9082,
-      "method": "aes-256-cfb",
-      "password": "45xgMgm386pjWjTx"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe",
       "server": "185.135.86.175",
       "server_port": 9036,
       "method": "aes-256-cfb",
@@ -53,7 +37,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe",
+      "server": "185.135.86.175",
+      "server_port": 9034,
+      "method": "aes-256-cfb",
+      "password": "Yg4MbdXFQ9HFFVY6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe",
       "server": "185.135.86.175",
       "server_port": 9068,
       "method": "aes-256-cfb",
@@ -61,7 +53,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - xiaohe",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe",
       "server": "185.135.86.175",
       "server_port": 9007,
       "method": "aes-256-cfb",
@@ -69,11 +61,23 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - xiaohe",
       "server": "185.135.86.175",
-      "server_port": 9034,
+      "server_port": 9017,
       "method": "aes-256-cfb",
-      "password": "Yg4MbdXFQ9HFFVY6"
+      "password": "HAVAdE3nXhqA5nHp"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe",
+      "server": "104.165.205.46",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
@@ -87,7 +91,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -97,92 +101,37 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe",
-      "server": "104.165.205.43",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": true
-      }
+      "server": "185.135.86.175",
+      "server_port": 9082,
+      "method": "aes-256-cfb",
+      "password": "45xgMgm386pjWjTx"
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 12 - xiaohe",
-      "server": "31.76.104.152",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "server": "195.123.213.28",
+      "server_port": 443,
+      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
+          "short_id": "5c256336e3b673fa"
+        }
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 13 - xiaohe",
-      "server": "104.165.205.44",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 14 - xiaohe",
-      "server": "104.165.205.23",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 15 - xiaohe",
-      "server": "104.165.205.46",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 16 - xiaohe",
-      "server": "104.165.205.219",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 17 - xiaohe",
-      "server": "104.165.205.81",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 18 - xiaohe",
       "server": "104.165.205.142",
       "server_port": 9443,
       "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
@@ -194,8 +143,20 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 19 - xiaohe",
-      "server": "104.165.205.250",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 14 - xiaohe",
+      "server": "104.165.205.219",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 15 - xiaohe",
+      "server": "31.76.104.152",
       "server_port": 9443,
       "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
       "tls": {
@@ -206,7 +167,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 20 - xiaohe",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 16 - xiaohe",
       "server": "216.173.71.43",
       "server_port": 443,
       "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
@@ -226,24 +187,39 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 21 - xiaohe",
-      "server": "195.123.213.28",
-      "server_port": 443,
-      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 17 - xiaohe",
+      "server": "104.165.205.250",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
-          "short_id": "5c256336e3b673fa"
-        }
+        "server_name": "onecloudstream.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 18 - xiaohe",
+      "server": "104.165.205.44",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 19 - xiaohe",
+      "server": "lv02.gotosvo.com",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": true
       }
     },
     {
@@ -269,9 +245,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 16 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 17 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 18 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 19 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 20 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 21 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 19 - xiaohe"
       ]
     },
     {
@@ -296,9 +270,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 16 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 17 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 18 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 19 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 20 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 21 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 19 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
