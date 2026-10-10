@@ -53,7 +53,11 @@ except ImportError as e:
 # ══════════════════════════════════════════════════════════════════
 
 SOURCE_URLS = [
-    "https://wild-cloud-9893.heleimail.workers.dev",
+    # 2026-10-10 實測停用：以下兩條 heleimail workers 連 5 次都回 HTTP 502，
+    # body 係 `[Upstream Failed] Status: 403 … Just a moment...` —— 即 worker 本身
+    # 生，但佢上游被 Cloudflare 403 挑戰攔住 → 結構性死（唔係暫時抖）。
+    # 佢哋零產出，留住只會每次跑多兩次失敗抓取；上游修好就刪註解即可還原。
+    # "https://wild-cloud-9893.heleimail.workers.dev",
     "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-TW.txt",
     "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/all.txt",
     "https://raw.githubusercontent.com/10ium/HiN-VPN/main/subscription/base64/mix",
@@ -61,10 +65,12 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/10ium/telegram-configs-collector/main/security/tls",
     "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/v2ray-base64.txt",
     "https://raw.githubusercontent.com/freefq/free/master/v2",
-    "https://open.heleimail.workers.dev/",
+    # "https://open.heleimail.workers.dev/",
     "https://www.ermao.net/sub/v2ray/ermao.net",
     "https://raw.githubusercontent.com/ishalumi/proxy-node-collector/main/output/nodes_base64.txt",
     "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/base64.txt",
+    # 註（2026-10-10）：上游 hezhanleiok/freesub 10-06 刪咗呢條，但我哋實測 HTTP 200
+    # 仲生（692KB Clash 設定），屬上游自家質量取向而唔係死鏈 → 唔跟刪。
     "https://raw.githubusercontent.com/PuddinCat/BestClash/main/proxies.yaml",
     "https://raw.githubusercontent.com/twj0/subseek/refs/heads/master/data/sub_github.txt",
 ]
