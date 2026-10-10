@@ -69,9 +69,11 @@ SOURCE_URLS = [
     "https://www.ermao.net/sub/v2ray/ermao.net",
     "https://raw.githubusercontent.com/ishalumi/proxy-node-collector/main/output/nodes_base64.txt",
     "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/base64.txt",
-    # 註（2026-10-10）：上游 hezhanleiok/freesub 10-06 刪咗呢條，但我哋實測 HTTP 200
-    # 仲生（692KB Clash 設定），屬上游自家質量取向而唔係死鏈 → 唔跟刪。
-    "https://raw.githubusercontent.com/PuddinCat/BestClash/main/proxies.yaml",
+    # 2026-10-10 停用（跟上游 10-06 同一決定，但理由係實測數據唔係盲跟）：
+    # 我哋 run 37838493421 嘅 log 顯示呢條 → **0 節點**（692KB Clash 設定格式，
+    # 我哋嘅 parser 抽唔到節點）→ 零產出。上游刪得對，我頭先見 HTTP 200 就話
+    # 「唔跟刪」係判斷錯（200 只證明條鏈生，唔證明有產出）。
+    # "https://raw.githubusercontent.com/PuddinCat/BestClash/main/proxies.yaml",
     "https://raw.githubusercontent.com/twj0/subseek/refs/heads/master/data/sub_github.txt",
 ]
 
