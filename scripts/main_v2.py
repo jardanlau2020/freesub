@@ -1639,6 +1639,9 @@ def outbound_to_clash(node: dict, name: str) -> dict:
     t = node.get("type")
     # 端口跳跃节点 (hy2 mport): 无 server_port 时取 server_ports 首区间起始端口
     # (parser 会 pop 掉 server_port 只留 server_ports, 直接下标会 KeyError 炸掉整个 export)
+    server = node.get("server")
+    if not server:
+        return None
     if "server_port" in node:
         port = node["server_port"]
     elif node.get("server_ports"):
