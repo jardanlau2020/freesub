@@ -1648,7 +1648,6 @@ def outbound_to_clash(node: dict, name: str) -> dict:
         port = int(str(node["server_ports"][0]).split(":")[0])
     else:
         return None
-    server = node["server"]
     proxy = {"name": name, "server": server, "port": port, "udp": True}
 
     if t == "vless":
