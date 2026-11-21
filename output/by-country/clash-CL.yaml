@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇱 智利 (Chile) 01 - xiaohe
-  server: leviko-cl0640.shopingggg.ir
+  server: 64.176.7.205
   port: 443
   udp: true
   type: trojan
