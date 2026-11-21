@@ -65,6 +65,9 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/10ium/telegram-configs-collector/main/security/tls",
     "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/v2ray-base64.txt",
     "https://raw.githubusercontent.com/freefq/free/master/v2",
+    # 2026-11-17 跟上游 f7e90aec 新增：openproxylist 改用 GitHub raw
+    # （上游 10-13 由 openproxylist.com 換成 roosterkid 嘅 raw，避站點改版）
+    "https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_RAW.txt",
     # "https://open.heleimail.workers.dev/",
     "https://www.ermao.net/sub/v2ray/ermao.net",
     "https://raw.githubusercontent.com/ishalumi/proxy-node-collector/main/output/nodes_base64.txt",
@@ -74,7 +77,10 @@ SOURCE_URLS = [
     # 我哋嘅 parser 抽唔到節點）→ 零產出。上游刪得對，我頭先見 HTTP 200 就話
     # 「唔跟刪」係判斷錯（200 只證明條鏈生，唔證明有產出）。
     # "https://raw.githubusercontent.com/PuddinCat/BestClash/main/proxies.yaml",
-    "https://raw.githubusercontent.com/twj0/subseek/refs/heads/master/data/sub_github.txt",
+    # 2026-11-17 跟上游 e635d426 / b2f2e466 新增：shadowmere 換域名 akiel.dev 並補尾斜槓
+    "https://shadowmere.akiel.dev/api/b64sub/",
+    # 2026-11-17 上游 a47c4743 刪除 twj0/subseek；我方未實測佢死，先註解保留可還原
+    # "https://raw.githubusercontent.com/twj0/subseek/refs/heads/master/data/sub_github.txt",
 ]
 
 OUTPUT_DIR = "output"
