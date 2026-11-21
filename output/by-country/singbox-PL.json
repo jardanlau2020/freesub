@@ -6,38 +6,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
-      "server": "217.30.10.70",
-      "server_port": 9041,
+      "server": "217.30.10.44",
+      "server_port": 9063,
       "method": "aes-256-cfb",
-      "password": "U6qnYRhfyDmn8sgn"
+      "password": "aQqJbtwFGcCCaeL3"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
-      "server": "217.30.10.44",
-      "server_port": 9076,
-      "method": "aes-256-cfb",
-      "password": "S2zDyyPcmZN2h8EC"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
-      "server": "217.30.10.44",
-      "server_port": 9095,
-      "method": "aes-256-cfb",
-      "password": "N7j3pdTYkKmsy8CR"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 04 - xiaohe",
-      "server": "217.30.10.44",
-      "server_port": 9052,
-      "method": "aes-256-cfb",
-      "password": "jt2ekBNc9HuVtm2a"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 05 - xiaohe",
       "server": "217.30.10.44",
       "server_port": 9099,
       "method": "aes-256-cfb",
@@ -45,11 +21,35 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
+      "server": "217.30.10.70",
+      "server_port": 9088,
+      "method": "aes-256-cfb",
+      "password": "f8npKgNzdkss2ytn"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 04 - xiaohe",
+      "server": "217.30.10.44",
+      "server_port": 9095,
+      "method": "aes-256-cfb",
+      "password": "N7j3pdTYkKmsy8CR"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 05 - xiaohe",
+      "server": "217.30.10.44",
+      "server_port": 9006,
+      "method": "aes-256-cfb",
+      "password": "FAdUvMJUq5vDgKEq"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 06 - xiaohe",
       "server": "217.30.10.44",
-      "server_port": 9063,
+      "server_port": 9052,
       "method": "aes-256-cfb",
-      "password": "aQqJbtwFGcCCaeL3"
+      "password": "jt2ekBNc9HuVtm2a"
     },
     {
       "type": "shadowsocks",
@@ -63,21 +63,29 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 08 - xiaohe",
       "server": "217.30.10.44",
-      "server_port": 9006,
+      "server_port": 9076,
       "method": "aes-256-cfb",
-      "password": "FAdUvMJUq5vDgKEq"
+      "password": "S2zDyyPcmZN2h8EC"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 09 - xiaohe",
       "server": "217.30.10.70",
-      "server_port": 9018,
+      "server_port": 9020,
       "method": "aes-256-cfb",
-      "password": "fG2artUmHfNT2cX7"
+      "password": "BNmAXXxAHYpTRdzu"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 10 - xiaohe",
+      "server": "217.30.10.70",
+      "server_port": 9045,
+      "method": "aes-256-cfb",
+      "password": "Lp27rqyJq72bZsqX"
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 10 - xiaohe",
+      "tag": "🇵🇱 波兰 (Poland) 11 - xiaohe",
       "server": "45.194.66.177",
       "server_port": 443,
       "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
@@ -88,7 +96,22 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇵🇱 波兰 (Poland) 12 - xiaohe",
+      "server": "54.37.131.126",
+      "server_port": 80,
+      "uuid": "1e55beca-3c69-4fa7-fb1f-15c1b767435f",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
         }
       }
     },
@@ -106,7 +129,9 @@
         "🇵🇱 波兰 (Poland) 07 - xiaohe",
         "🇵🇱 波兰 (Poland) 08 - xiaohe",
         "🇵🇱 波兰 (Poland) 09 - xiaohe",
-        "🇵🇱 波兰 (Poland) 10 - xiaohe"
+        "🇵🇱 波兰 (Poland) 10 - xiaohe",
+        "🇵🇱 波兰 (Poland) 11 - xiaohe",
+        "🇵🇱 波兰 (Poland) 12 - xiaohe"
       ]
     },
     {
@@ -122,7 +147,9 @@
         "🇵🇱 波兰 (Poland) 07 - xiaohe",
         "🇵🇱 波兰 (Poland) 08 - xiaohe",
         "🇵🇱 波兰 (Poland) 09 - xiaohe",
-        "🇵🇱 波兰 (Poland) 10 - xiaohe"
+        "🇵🇱 波兰 (Poland) 10 - xiaohe",
+        "🇵🇱 波兰 (Poland) 11 - xiaohe",
+        "🇵🇱 波兰 (Poland) 12 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
