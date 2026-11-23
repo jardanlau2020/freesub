@@ -25,6 +25,17 @@ proxies:
   servername: apple.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: 65.21.247.47
+  port: 443
+  udp: true
+  type: vless
+  uuid: fd419342-f50f-49b7-9074-d694b7d09508
+  flow: xtls-rprx-vision
+  tls: true
+  servername: static.47.247.21.65.clients.your-server.de
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 94.183.164.119
   port: 24433
   udp: true
@@ -32,6 +43,13 @@ proxies:
   password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
   sni: 94.183.164.119
   skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  server: 79.137.248.70
+  port: 445
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: b97f115e-83cd-4a1c-a375-693e6ef74321
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,6 +58,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,5 +68,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 rules:
 - MATCH,PROXIES

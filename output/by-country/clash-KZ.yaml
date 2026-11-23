@@ -5,29 +5,42 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
-  server: 91.219.23.76
-  port: 443
+  server: 109.248.170.119
+  port: 13447
   udp: true
   type: vless
-  uuid: 8b1b59c8-8802-0002-a636-ffe786275594
+  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
   tls: true
-  servername: cataloguebroker.comparecarprices.org
+  reality-opts:
+    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
+    short-id: '83'
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
+  server: 3h-kazakhstan1.09vpn.com
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
+  tls: true
+  servername: 3h-kazakhstan1.09vpn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /media/ws/
+    path: /vless/
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
 rules:
 - MATCH,PROXIES
