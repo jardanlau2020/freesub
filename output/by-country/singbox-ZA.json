@@ -28,20 +28,8 @@
       "tls": {
         "enabled": true,
         "server_name": "explorecareerpathsandunlockprofessionalsuccesstoday.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇿🇦 南非 (South Africa) 04 - xiaohe",
-      "server": "139.84.247.164",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "tfAcRikawhNoZAhu"
     },
     {
       "type": "selector",
@@ -50,8 +38,7 @@
         "auto",
         "🇿🇦 南非 (South Africa) 01 - xiaohe",
         "🇿🇦 南非 (South Africa) 02 - xiaohe",
-        "🇿🇦 南非 (South Africa) 03 - xiaohe",
-        "🇿🇦 南非 (South Africa) 04 - xiaohe"
+        "🇿🇦 南非 (South Africa) 03 - xiaohe"
       ]
     },
     {
@@ -60,8 +47,7 @@
       "outbounds": [
         "🇿🇦 南非 (South Africa) 01 - xiaohe",
         "🇿🇦 南非 (South Africa) 02 - xiaohe",
-        "🇿🇦 南非 (South Africa) 03 - xiaohe",
-        "🇿🇦 南非 (South Africa) 04 - xiaohe"
+        "🇿🇦 南非 (South Africa) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
