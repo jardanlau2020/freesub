@@ -15,7 +15,7 @@
         "server_name": "fjn2vd4dgxb6.dynarix-node41.sbs",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,

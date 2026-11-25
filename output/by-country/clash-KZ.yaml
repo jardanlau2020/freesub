@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA
   servername: fjn2vd4dgxb6.dynarix-node41.sbs
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   server: 38.107.234.57
   port: 8443
