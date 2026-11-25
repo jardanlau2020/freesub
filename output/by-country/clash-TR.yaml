@@ -12,16 +12,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: T199MCnogZBKi0QJdcSgUnoL3U9wl7t1
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 143.246.136.128
-  port: 50738
-  udp: true
-  type: vless
-  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
-  tls: true
-  servername: turkey-ip1.mmdaqaorg.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   server: 172.64.155.209
   port: 443
   udp: true
@@ -43,7 +33,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,6 +40,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 rules:
 - MATCH,PROXIES
