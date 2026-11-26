@@ -16,9 +16,9 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 02 - xiaohe
-  server: 77.221.157.45
+  server: 196.245.153.156
   port: 443
   udp: true
   type: vless
@@ -27,8 +27,8 @@ proxies:
   reality-opts:
     public-key: xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA
     short-id: 6d289ff0f47c0aac
-  servername: 961ec0g.nl13.h1clayd.click
-  client-fingerprint: firefox
+  servername: 961ec0g.nl17.h1clayd.click
+  client-fingerprint: ''
   network: grpc
   grpc-opts:
     grpc-service-name: 7d5abcd7d8a1
