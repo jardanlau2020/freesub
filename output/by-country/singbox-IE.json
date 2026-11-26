@@ -5,25 +5,25 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇧🇪 比利时 (Belgium) 01 - xiaohe",
-      "server": "38.180.87.217",
-      "server_port": 11943,
+      "tag": "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
+      "server": "146.70.90.196",
+      "server_port": 17454,
       "method": "aes-128-gcm",
-      "password": "fa938a7d397bda0f23e32143542ac0bb"
+      "password": "cVCf+5/dBI353UY4YcN3nS05znsJYtLF"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

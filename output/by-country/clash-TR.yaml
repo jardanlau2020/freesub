@@ -5,27 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 38.180.104.37
-  port: 19084
+  server: turkey-ip1.mmdaqaorg.xyz
+  port: 50738
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: ff4d354078394558933d699be149ad69
+  type: vless
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
+  tls: true
+  servername: turkey-ip1.mmdaqaorg.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 172.64.155.209
+  server: 172.67.199.12
   port: 443
   udp: true
   type: vless
-  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
   tls: true
-  servername: sinavm3.soft10.ir
+  servername: still-bar-5702.vpnetwork3567.workers.dev
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    path: /
     headers:
-      Host: sinavm3.soft10.ir
+      Host: still-bar-5702.vpnetwork3567.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
