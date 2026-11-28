@@ -6,40 +6,26 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   server: 185.135.86.175
+  port: 9068
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mwgRg9hRq3b4Qnwb
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+  server: 185.135.86.175
   port: 9033
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: UTJA57ypk2XKQpnm
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
-  server: 185.135.86.175
-  port: 9094
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: rpgbNnU9rDDU4aWZ
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
-  server: 185.135.86.175
-  port: 9007
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: kSPmvwdFzGMMW5pY
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
   server: 185.135.86.175
   port: 9036
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: hbtvgUz5uNYyB3Rf
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
-  server: 185.135.86.175
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
   server: 195.123.213.28
   port: 443
   udp: true
@@ -52,6 +38,19 @@ proxies:
     short-id: 5c256336e3b673fa
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
+  server: 94.183.234.245
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
+    short-id: 7f1e29593aa94ad1
+  servername: www.bing.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,7 +61,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,6 +71,5 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe
 rules:
 - MATCH,PROXIES
